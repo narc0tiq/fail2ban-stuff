@@ -1,0 +1,12 @@
+# Narc's local fail2bans
+
+[postfix-sasl]
+enabled = true
+
+
+[postfix-blackhole]
+enabled = true
+filter = postfix-blackhole
+logpath = /var/log/mail.log
+port = smtp,465,submission
+
